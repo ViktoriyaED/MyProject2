@@ -1,11 +1,11 @@
-package com.example.MyProject2;
+package com.example.MyProject2.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
 @Entity
-public class Employee {
+public class User {
 
     @Id
     @GeneratedValue
@@ -13,9 +13,9 @@ public class Employee {
 
     private String name;
 
-    public Employee() {}
+    public User() {}
 
-    public Employee(String name) {
+    public User(String name) {
         this.name = name;
     }
 
